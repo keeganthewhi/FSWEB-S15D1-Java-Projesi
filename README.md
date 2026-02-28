@@ -1,47 +1,20 @@
-#  Java Lists
+# Lists & ArrayLists
 
-### Proje Kurulumu
+> Full Stack Web Development Bootcamp — Sprint 15, Day 1
 
-Projeyi öncelikle forklayın ve clone edin.
-Daha sonra projeyi IntellijIDEA kullanarak açınız. README.md dosyasını dikkatli bir şekilde okuyarak istenenleri yapmaya çalışın.
-Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projelerimizi belli klasör kalıplarında saklamak işimizi kolaylaştırmak adına iyi bir alışkanlıktır.
-Örnek bir Lokasyon: Workintech/Sprint_1/Etud.
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 
-### Hedeflerimiz:
+## About
 
-### ArrayList Challenge
+Introduces the Java Collections Framework starting with Lists and ArrayLists. This assignment covers dynamic arrays, generic types, and common list operations for managing ordered collections of data.
 
- * Amacımız bir pazar arabası listesi oluşturmak
- * Bir konsol uygulaması oluşturacağız. Kullanıcı 0, 1 veya 2 değerlerini girebilir.(Scanner sınıfını kullanarak yapabilirsiniz.)
- * 0 uygulamayı durduracak.
- * 1 e tıklandığında ekrana bir prompt bastırın. ```Eklenmesini istediğiniz elemanları giriniz.``` Kullanıcı bu opsiyonu 2 farklı biçimde kullanabilir. Tek bir eleman ekleyebilir. Ya da virgüllerle ayırarak birden çok eleman ekleyebilir(tomato, orange, peach)
- * 2 e tıklandığında ekrana bir prompt bastırın. ```Cıkarılmasını istediğiniz elemanları giriniz.``` Kullanıcı bu opsiyonu 2 farklı biçimde kullanabilir. Tek bir eleman çıkarabilir. Ya da virgüllerle ayırarak birden çok eleman çıkarabilir(tomato, orange, peach)
- * Bir tane  ```groceryList``` adında ArrayList tipinde bir objeye ihtiyacımız var.
- * 4 tane metod yazmalıyız. ```addItems``` => listeye eleman eklemeli., ```removeItems``` => listeden eleman silmeli, ```checkItemIsInList``` => eklenmeye ya da silinmeye çalışılan elaman listede varmı kontrolü yapmalı, ```printSorted``` => tüm listeyi sıralayarak ekrana basmalı.
- * Her operasyon sonrasında liste sort edilmeli
- * Listede hiçbir şekilde tekrar eden veri bulunmamalı.
- 
-### Mobile Phone
+## Key Concepts
 
-* ```MobilePhone``` isimli bir sınıf oluşturacağız. İçerisinde Contact tipinde bir ArrayList tutmalı.
-* 2 tane field tutması lazım. Bir tanesi ```myNumber``` isminde ve String tipinde, diğer, ```myContacts``` isminde ve Contact ArrayList'i olmalı.
-* Constructor metodu myNumber değerini doldurmalı.
-* 7 tane metodumuz olmalı
-* ```addNewContact``` Contact türünde bir parametre alır. Boolean türünde bir değer döndürür. Contact listede yoksa Contact objesini listeye ekleyip ```true``` varsa ```false``` değeri döner.  
-* ```updateContact``` Contact türünde iki parametre alır. Contact lardan biri eskisi biri yenisinin değerini tutar. Boolean bir değer döner. Eğer Contact listede varsa ve doğru bir şekilde update edilirse ```true``` değer döner. Aksi durumda  ```false``` değeri döner.
-* ```removeContact``` Contact türünde bir parametre alır. Eğer Contact listede varsa ve başarılı bir şekilde silinirse ```true``` aksi durumda ```false``` değeri döner.,
-* ```findContact``` Contact türünde bir parametre alır ve ```int``` değer döndürür. Dönüş değeri Contact objesinin listedeki indeksi olmalıdır. Eğer eleman listede yoksa ```-1``` değeri döner.
-* ```findContact``` yukardaki findContact metodu ile aynı şekilde çalışır. Sadece parametresinin tipi ```String``` olmalıdır.
-* ```queryContact``` String tipinde bir değer alır ve Contact türünde bir değer döndürür. String parametre Contact ismini içerir. Eğer ilgili isimdeki Contact listede varsa ilgili Contact objesini döndürür. Yoksa null döndürür
-* ```printContact``` parametre almaz return değeri de yoktur. Contactların tamamını  aşağıdaki formattaki gibi listeler.
-  Contact List:
-1. Bob -> 31415926
-2. Alice -> 16180339
-3. Tom -> 11235813
-4. Jane -> 23571113
+- `List` interface and `ArrayList` implementation
+- Generics and type safety
+- Common list operations (add, remove, search, iterate)
+- Arrays vs. ArrayLists
 
-* Contact sınıfını tanımlayınız. ```name``` ve ```phoneNumber``` adında String tipinde 2 değişkeni olmalı.
-* Constructor metodu ```name``` ve ```phoneNumber``` parametrelerini almalı ve değer atamalarını yapmalı.
-* ```getName``` name için getter metodu, ```getPhoneNumber``` phoneNumber için getter metodu tanımlanmalı. 
-* ```createContact``` iki parametre alan bir metod olmalı.(Name ve phoneNumber ikiside String olmalı) aldığı iki değeri kullanarak bir Contact ```instance``` oluşturmalı ve bunu dönmeli.
-* ```createContact``` metodu ```static``` olmalı.
+## Bootcamp
+
+Part of the **Full Stack Web Development** program at [Workintech](https://www.workintech.com.tr/).
